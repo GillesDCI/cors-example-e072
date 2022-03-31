@@ -15,7 +15,7 @@ export default function NewPostForm(){
         };
 
         //post data to the server
-        const res = await axios.post('http://localhost:4000/posts/newpost', data);
+        const res = await axios.post('/posts/newpost', data);
 
         if(res.status === 200){
             console.log("yaay it worked out");

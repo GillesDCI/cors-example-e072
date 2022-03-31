@@ -7,7 +7,7 @@ export default function PostList(){
 
     const refreshList = async () => {
         console.log("refreshing the list")
-        const res = await axios.get('http://localhost:4000/posts')
+        const res = await axios.get('/posts')
         console.log("The response is ", res);
         setItems(res.data);
 
